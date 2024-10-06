@@ -1,7 +1,13 @@
 {
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-commandline": "^2.30.0",
     "cypress": "^13.15.0",
-    "cypress-wait-until": "^3.0.2"
+    "cypress-wait-until": "^3.0.2",
+    "mocha-allure-reporter": "^1.4.0"
+  },
+  "scripts": {
+    "browser:chrome": "npx cypress run --browser=chrome --headed --spec cypress/e2e/registerFormTest.cy.js --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report"
   }
 }
