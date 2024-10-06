@@ -1,3 +1,4 @@
+
 class RegistrationPageLocators {
     elements = {
       registrationButton: () => cy.get('header > div > nav[class="Header_bar"] > div > a[data-testid="header-sign-up-button"]'),
