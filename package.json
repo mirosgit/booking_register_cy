@@ -1,5 +1,7 @@
 {
   "devDependencies": {
-    "cypress": "^13.15.0"
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "cypress": "^13.15.0",
+    "cypress-wait-until": "^3.0.2"
   }
 }
