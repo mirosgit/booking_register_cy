@@ -4,9 +4,11 @@ class RegistrationPageLocators {
       registrationButton: () => cy.get('header > div > nav[class="Header_bar"] > div > a[data-testid="header-sign-up-button"]'),
       emailField: () => cy.get('input[name="username"]'),
       newPassField: () => cy.get('input[name="new_password"]'),
+      confirmPassField: () => cy.get('input[name="confirmed_password"]'),
       continueEmailButton: () => cy.get('button[type="submit"]'),
       continuePassButton: () => cy.get('form > div > button'),
       errorNewPassNote: () => cy.get('div[id="new_password-note"]'),
+      errorConfirmPassNote: () => cy.get('div[id="confirmed_password-note"]'),
       errorEmailNote: () => cy.get('div[id="username-note"]'),
     };
 }
